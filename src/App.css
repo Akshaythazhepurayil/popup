@@ -1,11 +1,113 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  padding: 1rem 2rem;
+  margin: .5rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, cyan 50%, transparent 50%);
+  background-size: 300%;
+  background-position: 100%;
+  transition: all 0.5s ease;
+ }
+.button:hover{
+  background-position: 0;
+  color: white;
+}
+.permission_button{
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  margin: .5rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, cyan 50%, transparent 50%);
+  background-size: 350%;
+  background-position: 100%;
+  transition: all 0.5s ease;
+  margin-left: 20px;
+}
+.permission_button:hover{
+  background-position: 0;
+  color: white;
+}
+.model{
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.model_container{
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgb(23, 21, 21);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.model_title{
+  padding: 1rem;
+  border-bottom: 1px solid rgb(193, 191, 191);
+}
+.model_content{
+  flex: 1;
+  padding: 1rem;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+}
+.input{
+  padding: .6rem;
+  width: 35%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-left: 5px;
+}
+.model_footer{
+  padding: 1rem;
+  border-top: 1px solid rgb(193, 191, 191);
+  display: flex;
+  justify-content: flex-end;
+}
+.close_button{
+  background-color: cyan;
+ padding: .5rem;
+ border-radius: 5px;
+ border: 1px solid gray;
+ color: white;
+ cursor: pointer;
+ margin: 5px;
+}
+.close_button:hover{
+  background-color: red;
+  
+}
+.save_button{
+  background-color: cyan;
+ padding: .5rem;
+ border-radius: 5px;
+ border: 1px solid gray;
+ color: white;
+ cursor: pointer;
+ margin: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +115,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
